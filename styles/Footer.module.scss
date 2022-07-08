@@ -1,0 +1,12 @@
+@import './partials/variables';
+@import './partials/mixin';
+
+.footer {
+  width: 100%;
+  min-height: 5rem;
+  background: $secondary_light;
+  justify-content: center;
+  p {
+    color: $secondary_dark;
+  }
+}

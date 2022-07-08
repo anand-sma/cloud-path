@@ -1,0 +1,14 @@
+@import './partials/variables';
+
+.pb {
+  padding-bottom: 1.2em;
+  & a {
+    font-size: 1.2rem;
+    color: $secondary-light;
+    padding: 0 0.3em;
+    background: $primary-light;
+    border-radius: 0.7rem;
+    float: right;
+    margin-right: 3em;
+  }
+}

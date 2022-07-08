@@ -1,0 +1,7 @@
+ul {
+  list-style: none;
+  font-size: 1.4rem;
+}
+.ul-x-list {
+  @include ul-ui();
+}

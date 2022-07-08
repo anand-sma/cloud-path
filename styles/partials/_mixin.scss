@@ -1,0 +1,26 @@
+@mixin card-shadow($hor: 0rem, $ver: 0rem, $opa: 1rem, $col: $shadow_color) {
+  box-shadow: $hor $ver $opa $col;
+}
+
+@mixin text-shadow($hor: 1rem, $ver: 1rem, $opa: 2rem, $col: $shadow_color) {
+  text-shadow: $hor $ver $opa $col;
+}
+
+@mixin border-radius($t: 1rem, $r: 1rem, $b: 1rem, $l: 1rem) {
+  border-radius: $t $r $b $l;
+}
+@mixin ul-ui() {
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0rem 0.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.4rem !important;
+  }
+  li:hover {
+    background: $primary_dark;
+    a {
+      color: $secondary_light !important;
+    }
+  }
+}

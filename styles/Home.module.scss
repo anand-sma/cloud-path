@@ -1,0 +1,135 @@
+@import '../styles/partials/variables';
+@import '../styles/partials/mixin';
+
+body {
+  margin: 1rem;
+}
+.img {
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 14% 50%);
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.primary {
+  height: 75vh;
+  padding: 1em;
+
+  & h1 {
+    font-size: 5rem;
+
+    & span:hover {
+      border-bottom: 2px solid $shadow_color;
+    }
+  }
+  & p {
+    line-height: 3rem;
+    font-size: 2rem;
+    color: $secondary_gray;
+  }
+  & .banner_head {
+    width: 100%;
+  }
+  &_col1 {
+    height: 100%;
+    width: 75%;
+    background: $secondary-light;
+  }
+
+  &_col2 {
+    height: 100%;
+    width: 25%;
+    background: $secondary-light;
+
+    &_row1 {
+      height: 75%;
+    }
+    &_row2 {
+      height: 25%;
+    }
+  }
+}
+
+.secondary {
+  height: 65vh;
+  padding: 1em;
+
+  &_col1 {
+    height: 100%;
+    width: 15%;
+    background: $secondary-light;
+
+    &_row1 {
+      height: 50%;
+    }
+    &_row2 {
+      height: 50%;
+    }
+  }
+
+  &_col2 {
+    width: 60%;
+    background: $secondary-light;
+  }
+  &_col3 {
+    height: 100%;
+    width: 25%;
+    background: $secondary-light;
+
+    &_row1 {
+      height: 33%;
+    }
+    &_row2 {
+      height: 34.2%;
+    }
+    &_row3 {
+      height: 33%;
+    }
+  }
+}
+
+.tertiary {
+  height: 65vh;
+  padding: 1em;
+
+  &_col1 {
+    height: 100%;
+    width: 25%;
+    background: $secondary-light;
+    &_row1 {
+      height: 33%;
+    }
+    &_row2 {
+      height: 34%;
+    }
+    &_row3 {
+      height: 33%;
+    }
+  }
+
+  &_col2 {
+    height: 100%;
+    width: 60%;
+    background: $secondary-light;
+  }
+
+  &_col3 {
+    height: 100%;
+    width: 15%;
+    background: $secondary-light;
+
+    &_row1 {
+      height: 50%;
+    }
+    &_row2 {
+      height: 50%;
+    }
+  }
+}
+
+.quaternary {
+  height: 5vh;
+  background: #ffc5;
+}

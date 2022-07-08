@@ -1,0 +1,92 @@
+@import './partials/variables';
+@import './partials/mixin';
+@import './partials/ului';
+@import './partials/layout';
+@import './partials/styling';
+* {
+  padding: 0em;
+  margin: 0em;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px; // DO NOT CHANGE THIS SIZE
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $secondary_dark;
+}
+body {
+  // background: url(/whitish.jpg);
+  // background-size: cover;
+  // background-attachment: fixed;
+  font-family: $font-family;
+  font-weight: 400;
+  color: $secondary_dark;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $primary_dark;
+}
+// h3,
+// h4 {
+//   color: $primary;
+// }
+h5,
+h6 {
+  color: $primary_light;
+}
+
+////////////CUSTOM SCROLLBAR////////////
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $secondary_light;
+  border-radius: 2rem;
+  border: 0.6rem solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $primary_light;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+//// @media query /////
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

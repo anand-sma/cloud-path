@@ -1,0 +1,81 @@
+@import './partials/variables';
+@import './partials/mixin';
+
+body {
+  margin: 2rem;
+}
+.navbar {
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 1111;
+  border-bottom: steelblue solid 7px;
+}
+.weather_head {
+  font-size: 1.4rem;
+}
+@supports (backdrop-filter: none) {
+  .navbar {
+    backdrop-filter: blur(1rem);
+    background-color: $secondary_light;
+    opacity: 0.9;
+  }
+}
+.logo {
+  transform: scale(1.1);
+  &:hover {
+    @include card-shadow(
+      $hor: 0rem,
+      $ver: 2rem,
+      $col: $shadow_color,
+      $opa: 5rem
+    );
+    animation: scaleup 0.05s ease-out forwards;
+  }
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+//// @media query /////
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+/* Extra small devices (phones, 550px and down) */
+@media only screen and (max-width: 550px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .menu {
+    visibility: hidden;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
