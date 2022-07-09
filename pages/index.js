@@ -16,7 +16,7 @@ export default function Home() {
         <link rel='icon' href='/logo.png' type='image/x-icon' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content='coaching: smarter online education' />
-        <title>cloud-coach || simply the smarter</title>
+        <title>cloud-path || simply the smarter</title>
         <link></link>
       </Head>
       <main className={`${styles.main}`}>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className={`${styles.primary_col1} p pl  flex-x centerXY`}>
             <div className={`${styles.banner_head} pl`}>
               <h1 className={`pl`}>
-                <span>CLOUD-COACH</span> EDUCATION
+                <span>CLOUD-PATH</span> EDUCATION
               </h1>
               <h1 className={`pl`}>OF DIGITAL INDIA</h1>
 
