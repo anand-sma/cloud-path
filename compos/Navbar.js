@@ -22,6 +22,10 @@ function Navbar() {
               <NavMenu title='Home' link='/' />
             </li>
             <li>
+              <NavMenu title='Posts' link='/posts' />
+            </li>
+
+            <li>
               <NavMenu title='Courses' link='/courses' />
             </li>
             <li>

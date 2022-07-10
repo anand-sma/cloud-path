@@ -1,9 +1,6 @@
 @import '../styles/partials/variables';
 @import '../styles/partials/mixin';
 
-body {
-  margin: 1rem;
-}
 .img {
   clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 14% 50%);
   transition: 0.2s ease-in-out;
